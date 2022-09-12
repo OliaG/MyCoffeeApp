@@ -4,9 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+using Microsoft.Maui;
 
 namespace MyCoffeeApp.Views
 {
@@ -18,7 +16,7 @@ namespace MyCoffeeApp.Views
         public MyCoffeeDetailsPage()
         {
             InitializeComponent();
-            coffeeService = DependencyService.Get<ICoffeeService>();
+            coffeeService = Helpers.ServiceProvider.GetService<ICoffeeService>();
         }
 
         protected override async void OnAppearing()

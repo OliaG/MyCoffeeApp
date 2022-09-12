@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Xamarin.Forms;
+using Microsoft.Maui;
+using Microsoft.Maui.ApplicationModel;
+using Microsoft.Maui.Controls;
 
 namespace MyCoffeeApp.Helpers
 {
@@ -13,37 +15,37 @@ namespace MyCoffeeApp.Helpers
             {
                 //default
                 case 0:
-                    App.Current.UserAppTheme = OSAppTheme.Unspecified;
+                    App.Current.UserAppTheme = AppTheme.Unspecified;
                     break;
                 //light
                 case 1:
-                    App.Current.UserAppTheme = OSAppTheme.Light;
+                    App.Current.UserAppTheme = AppTheme.Light;
                     break;
                 //dark
                 case 2:
-                    App.Current.UserAppTheme = OSAppTheme.Dark;
+                    App.Current.UserAppTheme = AppTheme.Dark;
                     break;
             }
 
-            var nav = App.Current.MainPage as Xamarin.Forms.NavigationPage;
+            var nav = App.Current.MainPage as NavigationPage;
 
             var e = DependencyService.Get<IEnvironment>();
-            if(App.Current.RequestedTheme == OSAppTheme.Dark)
+            if(App.Current.RequestedTheme == AppTheme.Dark)
             {
-                e?.SetStatusBarColor(Color.Black, false);
+                e?.SetStatusBarColor(Colors.Black, false);
                 if(nav != null)
                 {
-                    nav.BarBackgroundColor = Color.Black;
-                    nav.BarTextColor = Color.White;
+                    nav.BarBackgroundColor = Colors.Black;
+                    nav.BarTextColor = Colors.White;
                 }
             }
             else
             {
-                e?.SetStatusBarColor(Color.White, true);
+                e?.SetStatusBarColor(Colors.White, true);
                 if (nav != null)
                 {
-                    nav.BarBackgroundColor = Color.White;
-                    nav.BarTextColor = Color.Black;
+                    nav.BarBackgroundColor = Colors.White;
+                    nav.BarTextColor = Colors.Black;
                 }
             }
 

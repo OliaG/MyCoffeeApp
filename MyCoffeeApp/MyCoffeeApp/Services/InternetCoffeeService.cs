@@ -9,7 +9,6 @@ using System.IO;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Essentials;
 
 namespace MyCoffeeApp.Services
 {
@@ -18,7 +17,7 @@ namespace MyCoffeeApp.Services
         //static string Baseurl = DeviceInfo.Platform == DevicePlatform.Android ?
         //                                    "http://10.0.2.2:5000" : "http://localhost:5000";
 
-        static string BaseUrl = "YOUR URL";
+        static string BaseUrl = "https://10.0.2.2:5000";
 
         static HttpClient client;
 

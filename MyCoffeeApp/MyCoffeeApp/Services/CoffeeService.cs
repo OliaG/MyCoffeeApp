@@ -6,10 +6,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Essentials;
-using Xamarin.Forms;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
 
-[assembly:Dependency(typeof(CoffeeService))]
 namespace MyCoffeeApp.Services
 {
     public class CoffeeService : ICoffeeService
@@ -21,7 +20,7 @@ namespace MyCoffeeApp.Services
                 return;
 
             // Get an absolute path to the database file
-            var databasePath = Path.Combine(FileSystem.AppDataDirectory, "MyData.db");
+            var databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "MyData.db");
 
             db = new SQLiteAsyncConnection(databasePath);
 

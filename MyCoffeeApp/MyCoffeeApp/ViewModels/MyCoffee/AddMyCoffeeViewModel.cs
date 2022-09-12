@@ -4,7 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
 
 namespace MyCoffeeApp.ViewModels
 {
@@ -22,7 +23,7 @@ namespace MyCoffeeApp.ViewModels
         {
             Title = "Add Coffee";
             SaveCommand = new AsyncCommand(Save);
-            coffeeService = DependencyService.Get<ICoffeeService>();
+            coffeeService = Helpers.ServiceProvider.GetService<ICoffeeService>();
         }
 
         async Task Save()

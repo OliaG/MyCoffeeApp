@@ -5,8 +5,9 @@ using MyCoffeeApp.Shared.Models;
 using MyCoffeeApp.Views;
 using System.Linq;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 using Command = MvvmHelpers.Commands.Command;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
 
 namespace MyCoffeeApp.ViewModels
 {
@@ -33,7 +34,7 @@ namespace MyCoffeeApp.ViewModels
             RemoveCommand = new AsyncCommand<Coffee>(Remove);
             SelectedCommand = new AsyncCommand<Coffee>(Selected);
 
-            coffeeService = DependencyService.Get<ICoffeeService>();
+            coffeeService = Helpers.ServiceProvider.GetService<ICoffeeService>();
         }
 
         async Task Add()
