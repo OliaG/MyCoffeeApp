@@ -5,8 +5,8 @@ using System.Linq;
 using Foundation;
 using MyCoffeeApp.Helpers;
 using UIKit;
-using Xamarin.Forms;
-using Xamarin.Essentials;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
 
 [assembly:Dependency(typeof(MyCoffeeApp.iOS.Environment))]
 
