@@ -5,9 +5,9 @@
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <UseMaui>true</UseMaui>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+  <!-- <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
-  </PropertyGroup>
+  </PropertyGroup> -->
  
  <ItemGroup>
     <PackageReference Include="MonkeyCache.FileStore" Version="1.6.3">
