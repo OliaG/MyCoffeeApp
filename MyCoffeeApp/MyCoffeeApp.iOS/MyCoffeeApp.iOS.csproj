@@ -3,38 +3,173 @@
     <OutputType>Exe</OutputType>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <UseMaui>true</UseMaui>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
-    <CodesignKey>Apple Development: James Montemagno (AMVKNEC6W3)</CodesignKey>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignProvision>VS: WildCard Development</CodesignProvision>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
-    <CodesignKey>iPhone Developer</CodesignKey>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <MtouchUseLlvm>true</MtouchUseLlvm>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
-    <AppExtensionDebugBundleId />
-  </PropertyGroup>
-  <PropertyGroup>
     <TargetFramework>net7.0-ios</TargetFramework>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
+    <CreatePackage>false</CreatePackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
   <ItemGroup>
-     <PackageReference Include="MonkeyCache.FileStore" Version="1.6.3">
-    </PackageReference>
-    <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2">
-    </PackageReference>
-    <PackageReference Include="sqlite-net-pcl" Version="1.8.116">
-    </PackageReference>
+     <PackageReference Include="MonkeyCache.FileStore" Version="1.6.3" />
+    <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
 	  <PackageReference Include="SQLitePCLRaw.core" Version="2.1.0-pre20220207221914" />
 	  <PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.0-pre20220207221914" />
 	  <PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" Version="2.1.0-pre20220207221914" />
 	  <PackageReference Include="SQLitePCLRaw.provider.sqlite3" Version="2.1.0-pre20220207221914" />
 	  <PackageReference Include="CommunityToolkit.Maui" Version="3.0.0" />
-    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyCoffeeApp\MyCoffeeApp.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Update="Assets.xcassets\AppIcons.appiconset\Icon167.png">
+      <Link>Assets.xcassets\AppIcons.appiconset\Icon167.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcons.appiconset\Icon29.png">
+      <Link>Assets.xcassets\AppIcons.appiconset\Icon29.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcons.appiconset\Icon1024.png">
+      <Link>Assets.xcassets\AppIcons.appiconset\Icon1024.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcons.appiconset\Icon60.png">
+      <Link>Assets.xcassets\AppIcons.appiconset\Icon60.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcons.appiconset\Icon76.png">
+      <Link>Assets.xcassets\AppIcons.appiconset\Icon76.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcons.appiconset\Icon58.png">
+      <Link>Assets.xcassets\AppIcons.appiconset\Icon58.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcons.appiconset\Icon40.png">
+      <Link>Assets.xcassets\AppIcons.appiconset\Icon40.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcons.appiconset\Icon80.png">
+      <Link>Assets.xcassets\AppIcons.appiconset\Icon80.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcons.appiconset\Contents.json">
+      <Link>Assets.xcassets\AppIcons.appiconset\Contents.json</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcons.appiconset\Icon87.png">
+      <Link>Assets.xcassets\AppIcons.appiconset\Icon87.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcons.appiconset\Icon120.png">
+      <Link>Assets.xcassets\AppIcons.appiconset\Icon120.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcons.appiconset\Icon152.png">
+      <Link>Assets.xcassets\AppIcons.appiconset\Icon152.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcons.appiconset\Icon20.png">
+      <Link>Assets.xcassets\AppIcons.appiconset\Icon20.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcons.appiconset\Icon180.png">
+      <Link>Assets.xcassets\AppIcons.appiconset\Icon180.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%402x.png">
+      <Link>Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%402x.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%401x.png">
+      <Link>Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%401x.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%401x.png">
+      <Link>Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%401x.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%401x.png">
+      <Link>Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%401x.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon-App-83.5x83.5%402x.png">
+      <Link>Assets.xcassets\AppIcon.appiconset\Icon-App-83.5x83.5%402x.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%403x.png">
+      <Link>Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%403x.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\ItunesArtwork%402x.png">
+      <Link>Assets.xcassets\AppIcon.appiconset\ItunesArtwork%402x.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Link>Assets.xcassets\AppIcon.appiconset\Contents.json</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%402x.png">
+      <Link>Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%402x.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%403x.png">
+      <Link>Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%403x.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%402x.png">
+      <Link>Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%402x.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%403x.png">
+      <Link>Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%403x.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%402x.png">
+      <Link>Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%402x.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%401x.png">
+      <Link>Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%401x.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%403x.png">
+      <Link>Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%403x.png</Link>
+    </ImageAsset>
+    <ImageAsset Update="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x.png">
+      <Link>Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x.png</Link>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Update="Resources\LaunchScreen.storyboard">
+      <Link>Resources\LaunchScreen.storyboard</Link>
+    </InterfaceDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Condition="'$(_ResourcePrefix)' != ''" Update="Resources\icon_about%403x.png">
+      <Link>Resources\icon_about%403x.png</Link>
+    </BundleResource>
+    <BundleResource Condition="'$(_ResourcePrefix)' != ''" Update="Resources\Default-Portrait%402x.png">
+      <Link>Resources\Default-Portrait%402x.png</Link>
+    </BundleResource>
+    <BundleResource Condition="'$(_ResourcePrefix)' != ''" Update="Resources\coffeebag.png">
+      <Link>Resources\coffeebag.png</Link>
+    </BundleResource>
+    <BundleResource Condition="'$(_ResourcePrefix)' != ''" Update="Resources\icon_about.png">
+      <Link>Resources\icon_about.png</Link>
+    </BundleResource>
+    <BundleResource Condition="'$(_ResourcePrefix)' != ''" Update="Resources\icon_about%402x.png">
+      <Link>Resources\icon_about%402x.png</Link>
+    </BundleResource>
+    <BundleResource Condition="'$(_ResourcePrefix)' != ''" Update="Resources\Default-Portrait.png">
+      <Link>Resources\Default-Portrait.png</Link>
+    </BundleResource>
+    <BundleResource Condition="'$(_ResourcePrefix)' != ''" Update="Resources\Default%402x.png">
+      <Link>Resources\Default%402x.png</Link>
+    </BundleResource>
+    <BundleResource Condition="'$(_ResourcePrefix)' != ''" Update="Resources\xamarin_logo%402x.png">
+      <Link>Resources\xamarin_logo%402x.png</Link>
+    </BundleResource>
+    <BundleResource Condition="'$(_ResourcePrefix)' != ''" Update="Resources\Default-568h%402x.png">
+      <Link>Resources\Default-568h%402x.png</Link>
+    </BundleResource>
+    <BundleResource Condition="'$(_ResourcePrefix)' != ''" Update="Resources\xamarin_logo.png">
+      <Link>Resources\xamarin_logo.png</Link>
+    </BundleResource>
+    <BundleResource Condition="'$(_ResourcePrefix)' != ''" Update="Resources\xamarin_logo%403x.png">
+      <Link>Resources\xamarin_logo%403x.png</Link>
+    </BundleResource>
+    <BundleResource Condition="'$(_ResourcePrefix)' != ''" Update="Resources\icon_feed.png">
+      <Link>Resources\icon_feed.png</Link>
+    </BundleResource>
+    <BundleResource Condition="'$(_ResourcePrefix)' != ''" Update="Resources\icon_feed%402x.png">
+      <Link>Resources\icon_feed%402x.png</Link>
+    </BundleResource>
+    <BundleResource Condition="'$(_ResourcePrefix)' != ''" Update="Resources\Default.png">
+      <Link>Resources\Default.png</Link>
+    </BundleResource>
+    <BundleResource Condition="'$(_ResourcePrefix)' != ''" Update="Resources\icon_feed%403x.png">
+      <Link>Resources\icon_feed%403x.png</Link>
+    </BundleResource>
   </ItemGroup>
 </Project>
