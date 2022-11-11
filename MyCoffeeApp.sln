@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30717.126
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCoffeeApp.Android", "MyCoffeeApp\MyCoffeeApp.Android\MyCoffeeApp.Android.csproj", "{60CA8B6A-A9BE-4994-A252-AF48671836E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCoffeeApp.Android", "MyCoffeeApp\MyCoffeeApp.Android\MyCoffeeApp.Android.csproj", "{60CA8B6A-A9BE-4994-A252-AF48671836E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCoffeeApp.iOS", "MyCoffeeApp\MyCoffeeApp.iOS\MyCoffeeApp.iOS.csproj", "{D0CF2A5B-8BD6-4E6F-9FBC-AF984671D5FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCoffeeApp.iOS", "MyCoffeeApp\MyCoffeeApp.iOS\MyCoffeeApp.iOS.csproj", "{D0CF2A5B-8BD6-4E6F-9FBC-AF984671D5FB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCoffeeApp", "MyCoffeeApp\MyCoffeeApp\MyCoffeeApp.csproj", "{F26C65BA-26F3-4634-8AB4-A5148AF07A74}"
 EndProject
@@ -25,11 +25,7 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Debug|iPhone = Debug|iPhone
-		Debug|iPhoneSimulator = Debug|iPhoneSimulator
 		Release|Any CPU = Release|Any CPU
-		Release|iPhone = Release|iPhone
-		Release|iPhoneSimulator = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{60CA8B6A-A9BE-4994-A252-AF48671836E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,12 +34,12 @@ Global
 		{60CA8B6A-A9BE-4994-A252-AF48671836E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60CA8B6A-A9BE-4994-A252-AF48671836E5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{60CA8B6A-A9BE-4994-A252-AF48671836E5}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{D0CF2A5B-8BD6-4E6F-9FBC-AF984671D5FB}.Debug|Any CPU.ActiveCfg = Debug|iPhone
-		{D0CF2A5B-8BD6-4E6F-9FBC-AF984671D5FB}.Debug|Any CPU.Build.0 = Debug|iPhone
-		{D0CF2A5B-8BD6-4E6F-9FBC-AF984671D5FB}.Debug|Any CPU.Deploy.0 = Debug|iPhone
-		{D0CF2A5B-8BD6-4E6F-9FBC-AF984671D5FB}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
-		{D0CF2A5B-8BD6-4E6F-9FBC-AF984671D5FB}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
-		{D0CF2A5B-8BD6-4E6F-9FBC-AF984671D5FB}.Release|Any CPU.Deploy.0 = Release|iPhoneSimulator
+		{D0CF2A5B-8BD6-4E6F-9FBC-AF984671D5FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0CF2A5B-8BD6-4E6F-9FBC-AF984671D5FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0CF2A5B-8BD6-4E6F-9FBC-AF984671D5FB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D0CF2A5B-8BD6-4E6F-9FBC-AF984671D5FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0CF2A5B-8BD6-4E6F-9FBC-AF984671D5FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0CF2A5B-8BD6-4E6F-9FBC-AF984671D5FB}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{F26C65BA-26F3-4634-8AB4-A5148AF07A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F26C65BA-26F3-4634-8AB4-A5148AF07A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F26C65BA-26F3-4634-8AB4-A5148AF07A74}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
@@ -51,7 +47,9 @@ Global
 		{F26C65BA-26F3-4634-8AB4-A5148AF07A74}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F26C65BA-26F3-4634-8AB4-A5148AF07A74}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{010E5404-AD37-4FC2-8B73-76A0F0AEBA66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{010E5404-AD37-4FC2-8B73-76A0F0AEBA66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{010E5404-AD37-4FC2-8B73-76A0F0AEBA66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{010E5404-AD37-4FC2-8B73-76A0F0AEBA66}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AFDFC5AB-C2C2-4F45-8F51-711E3EE9E0A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AFDFC5AB-C2C2-4F45-8F51-711E3EE9E0A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFDFC5AB-C2C2-4F45-8F51-711E3EE9E0A6}.Release|Any CPU.ActiveCfg = Release|Any CPU

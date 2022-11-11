@@ -4,6 +4,7 @@
     <OutputType>Exe</OutputType>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <UseMaui>true</UseMaui>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <!-- <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
