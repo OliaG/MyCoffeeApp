@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
-using MyCoffeeApp.Helpers;
 using UIKit;
 using Microsoft.Maui;
 using Microsoft.Maui.Controls;
+using Microsoft.Maui.Hosting;
+using MyCoffeeApp.Helpers;
+using Microsoft.Maui.Graphics;
+using Microsoft.Maui.Controls.Compatibility.Platform.iOS;
+using Platform = Microsoft.Maui.ApplicationModel.Platform;
 
 // [assembly:Dependency(typeof(MyCoffeeApp.iOS.Environment))]
 
@@ -44,7 +48,7 @@ namespace MyCoffeeApp.iOS
             if (UIDevice.CurrentDevice.CheckSystemVersion(13, 0))
             {
                 var statusBar = new UIView(UIApplication.SharedApplication.KeyWindow.WindowScene.StatusBarManager.StatusBarFrame);
-                statusBar.BackgroundColor = color.ToPlatformColor();
+                statusBar.BackgroundColor = color.ToUIColor();
                 UIApplication.SharedApplication.KeyWindow.AddSubview(statusBar);
             }
             else
@@ -52,7 +56,7 @@ namespace MyCoffeeApp.iOS
                 var statusBar = UIApplication.SharedApplication.ValueForKey(new NSString("statusBar")) as UIView;
                 if (statusBar.RespondsToSelector(new ObjCRuntime.Selector("setBackgroundColor:")))
                 {
-                    statusBar.BackgroundColor = color.ToPlatformColor();
+                    statusBar.BackgroundColor = color.ToUIColor();
                 }
             }
             var style = darkStatusBarTint ? UIStatusBarStyle.DarkContent : UIStatusBarStyle.LightContent;
