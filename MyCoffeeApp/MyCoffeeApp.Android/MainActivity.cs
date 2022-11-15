@@ -7,12 +7,12 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using MyCoffeeApp.Services;
-using Xamarin.Essentials;
-using Xamarin.Forms;
 using MyCoffeeApp.Droid;
 using MyCoffeeApp.Helpers;
 using AndroidX.Core.View;
 using System.Threading.Tasks;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
 
 [assembly: Dependency(typeof(Toaster))]
 [assembly: Dependency(typeof(MyCoffeeApp.Droid.Environment))]

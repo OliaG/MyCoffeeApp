@@ -3,8 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
-using Command = Xamarin.Forms.Command;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
 
 namespace MyCoffeeApp.ViewModels
 {

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Xamarin.Forms;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
 
 namespace MyCoffeeApp.Helpers
 {
@@ -25,7 +26,7 @@ namespace MyCoffeeApp.Helpers
                     break;
             }
 
-            var nav = App.Current.MainPage as Xamarin.Forms.NavigationPage;
+            var nav = App.Current.MainPage as NavigationPage;
 
             var e = DependencyService.Get<IEnvironment>();
             if(App.Current.RequestedTheme == OSAppTheme.Dark)

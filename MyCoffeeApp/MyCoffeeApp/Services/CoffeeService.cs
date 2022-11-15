@@ -6,8 +6,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Essentials;
-using Xamarin.Forms;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
 
 [assembly:Dependency(typeof(CoffeeService))]
 namespace MyCoffeeApp.Services
